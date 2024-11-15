@@ -3,7 +3,7 @@ spring:
     url: jdbc:mysql://localhost:3306/MSUtilisateur?createDatabaseIfNotExist=true&serverTimezone=UTC
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: {cipher}fa58f66bec8022a6d075f403f9910a0ac5492e0ca1acac0404a537f312ac2d97
+    password: "{cipher}fa58f66bec8022a6d075f403f9910a0ac5492e0ca1acac0404a537f312ac2d97"
   jpa:
     hibernate:
       ddl-auto: create
@@ -13,3 +13,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
