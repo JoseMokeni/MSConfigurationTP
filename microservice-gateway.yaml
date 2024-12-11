@@ -8,7 +8,7 @@ spring:
     gateway:
       routes:
         - id: microservice-utilisateur
-          uri: lb://microservice-utilisateur
+          uri: lb://MICROSERVICE-UTILISATEUR
           predicates:
             - Path=/utilisateur/**
           filters:
