@@ -20,3 +20,6 @@ spring:
             - Path=/projet/**
           filters:
             - RewritePath=/projet/(?<path>.*), /$\{path}
+
+server:
+  port: 8000
